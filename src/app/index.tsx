@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Stack, Box, Text, Select} from "@chakra-ui/react";
+import {Container, Stack, Text, Select} from "@chakra-ui/react";
 import {motion} from "framer-motion";
 
 import "./index.css";
@@ -100,7 +100,7 @@ const App: React.FC = (props: any) => {
   const getDataTerritorios = (id) => {
     if (id == 0)
       return <Text>Seleccione un territorio en el mapa o en el desplegable debajo.</Text>;
-    let cont = Provincias.map((prov, index) => {
+    let cont = Provincias.map((prov) => {
       if (prov.id == id) {
         return (
           <Stack key={prov.id}>

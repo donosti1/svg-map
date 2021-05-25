@@ -2,9 +2,6 @@ svg path:hover{
     cursor: pointer;
     fill: #00a3de!important;
 }
-/*svg{
-    pointer-events: none;
-}*/
 path{
     pointer-events: auto;
 }
